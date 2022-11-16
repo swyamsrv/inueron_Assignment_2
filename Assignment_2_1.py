@@ -10,4 +10,10 @@ for i in range(1, 2*k+1):
             print('* ', end='')
         print()
 
+"""QUESTION 2"""
 
+word = input()
+temp = ''
+for i in range(len(word)-1, -1, -1):
+    temp += temp.join(word[i])
+print(temp)
